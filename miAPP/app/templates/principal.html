@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estile.css') }}">
+</head>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="user-profile">
+            <img src="{{ url_for('avatar', filename=user.avatar) }}" alt="Avatar">
+            <h3>{{ user.username }}</h3>
+            <a href="/editar_perfil"><button id="editar-perfil">Editar Perfil</button></a>
+            <a href="/logout"><button id="cerrar-sesion">Cerrar Sesión</button></a>
+        </div>
+        <!-- Contenedor de Servidores -->
+        <div class="servidores">
+            <h2>Servidores</h2>
+            <ul>
+                <li><a href="/servidor1">Servidor 1</a> <button class="unirse-servidor">Unirse</button> <button class="eliminar-servidor">Eliminar</button></li>
+                <li><a href="/servidor2">Servidor 2</a> <button class="unirse-servidor">Unirse</button> <button class="eliminar-servidor">Eliminar</button></li>
+            </ul>
+            <button id="crear-servidor">Crear Nuevo Servidor</button>
+        </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="contenido-principal">
+        <div class="canales">
+            <h2>Canales de Chat</h2>
+            <ul>
+                <li><a href="canal1.html">Literatura Fantástica</a> <button class="unirse-canal">Unirse</button></li>
+                <li><a href="canal2.html">Programación Web</a> <button class="unirse-canal">Unirse</button></li>
+            </ul>
+            <button id="crear-canal">Crear Nuevo Canal</button>
+        </div>
+        <div class="chat">
+            <div class="encabezado-chat">
+                <h2 id="nombre-canal">Nombre del Canal</h2>
+            </div>
+            <div class="mensajes-chat" id="mensajes-chat">
+                <!-- Aquí se mostrarán los mensajes del chat -->
+            </div>
+            <div class="entrada-chat">
+                <input type="text" id="entrada-mensaje" placeholder="Escribe un mensaje">
+                <button id="enviar-mensaje">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

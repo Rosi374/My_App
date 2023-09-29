@@ -1,0 +1,89 @@
+/* Estilos para el cuerpo */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/static/img/2.jpg);
+    background-size: cover;
+    margin: 0;
+    color: #fff; /* Letras en blanco */
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272d2ea2; /* Color de fondo gris plomo */
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgb(185, 94, 238);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 2.5rem;
+    color: #fff; /* Letras en blanco */
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    width: 100%;
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Letras en blanco */
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #9191bd;
+    border-radius: 20px;
+    outline: none;
+    color: #000; /* Letras en color negro */
+    background-color: #fff; /* Fondo blanco para el cuadro de entrada */
+}
+
+.login-container button {
+    background-color: #9191bd;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #7a7a9a;
+}
+
+.login-container .messages {
+    list-style: none;
+    padding: 0;
+}
+
+.login-container .messages li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff; /* Letras en blanco */
+}
+
+.login-container a {
+    color: #b16fd8;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+    color: #fff; /* Letras en blanco */
+}
